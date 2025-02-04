@@ -1,0 +1,229 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+} */
+
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+/********** navigation**********/
+nav {
+  background-image: url(./asset/nav.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5% 2%;
+  position: sticky;
+}
+.logo {
+  flex-basis: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+.logo img {
+  width: clamp(60px, 9vw, 100px);
+  height: auto;
+}
+.nav-items {
+  flex-basis: 45%;
+  /* border: 1px solid blue; */
+}
+.nav-items ul {
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.nav-items ul li a {
+  text-decoration: none;
+  font-size: clamp(10px, 2vw, 20px);
+  padding: 2% 6%;
+  color: #ffff;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.nav-items ul li a :hover {
+  text-shadow: #cc9600;
+}
+.user-acount {
+  flex-basis: 15%;
+  /* border: 1px solid greenyellow; */
+  display: flex;
+  justify-content: flex-end;
+}
+
+i {
+  color: #ffff;
+  font-size: clamp(25px, 2vw, 32px);
+}
+/* !!! hero section !!! */
+section.hero-section {
+  position: relative;
+}
+.hero-section img {
+  width: 100vw;
+  height: clamp(50dvh, 10vw, 90dvh);
+}
+section.hero-section > .text {
+  color: orangered;
+}
+
+.hero-section > .text {
+  position: absolute;
+  top: 15%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.main-text {
+  font-weight: 800;
+  font-size: clamp(16px, 5vw, 50px);
+  white-space: nowrap;
+  background: radial-gradient(#cc9600, #ff7700);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.sub-text {
+  color: #ffff;
+  text-align: center;
+  margin-top: 7px;
+  font-size: clamp(13px, 2vw, 20px);
+}
+
+/* **********************best-picks****************** */
+
+article.book > img {
+  width: 130px;
+  height: 200px;
+}
+section.best-picks {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+  /* background-color: aqua; */
+  width: 65vw;
+  margin-top: 45px;
+}
+section.best-picks > h2 {
+  font-size: clamp(23px, 4vw, 38px);
+  font-weight: 700;
+}
+section.best-picks > .book-wrapper {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  /* border: 3px solid orangered; */
+  width: 90%;
+  flex-wrap: wrap;
+  margin-top: 25px;
+}
+article.book {
+  flex-basis: 25%;
+  aspect-ratio: 1;
+  padding: 3%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  gap: 5px;
+}
+article.book > p.name {
+  font-size: clamp(12px, 2vw, 16px);
+}
+article.book > span.authur {
+  font-size: clamp(8px, 2vw, 12px);
+  color: #495057;
+}
+/*********************book-offers-section***************** */
+.book-offers-section {
+  background-color: black;
+  width: 100vw;
+  padding: 5%;
+  display: flex;
+  /* align-items: center;
+  justify-content: center; */
+  flex-wrap: wrap;
+  gap: 10%;
+}
+.book-offers-section img {
+  flex-basis: 45%;
+}
+.book-offers {
+  flex-basis: 45%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  /* display: grid;
+  grid-template-rows: 4; */
+  gap: 7%;
+
+  /* border: 1px solid orangered; */
+}
+
+.main-text-offer {
+  font-size: clamp(16px, 5vw, 50px);
+  color: #ffff;
+}
+.inline-text {
+  color: #cc9600;
+}
+.sub-text-offer {
+  font-size: clamp(10px, 2vw, 20px);
+
+  color: #ffff;
+}
+.statistic {
+  color: #cc9600;
+  display: flex;
+  gap: 6%;
+}
+button.explor {
+  border: 1px solid #cc9600;
+  background-color: black;
+  color: #fff;
+  padding-block: clamp(5px, 5vw, 10px);
+  padding-inline: clamp(9px, 5vw, 14vw);
+  border-radius: 20px;
+}
+/* ***************footer******************* */
+
+footer {
+  background-color: black;
+}
+
+footer > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+div.footer-wrapper > p {
+  color: #cc9600;
+  font-size: clamp(10px, 2vw, 16px);
+}
+
+span.social {
+  width: clamp(20px, 5vw, 60px);
+  height: auto;
+}
