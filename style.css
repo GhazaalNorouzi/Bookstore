@@ -59,21 +59,22 @@ nav {
   white-space: nowrap;
   cursor: pointer;
 }
-.nav-items ul li a :hover {
-  text-shadow: #cc9600;
+.nav-items ul li a:hover {
+  text-shadow: 1px 1px 2px #cc9600;
 }
 .user-acount {
   flex-basis: 15%;
   /* border: 1px solid greenyellow; */
   display: flex;
   justify-content: flex-end;
+  padding-right: 2%;
 }
 
 i {
   color: #ffff;
   font-size: clamp(25px, 2vw, 32px);
 }
-/* !!! hero section !!! */
+/* !!!!!!!!!!!!!!!!!!!!!!!!!!! hero section !!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 section.hero-section {
   position: relative;
 }
@@ -109,9 +110,12 @@ section.hero-section > .text {
 
 /* **********************best-picks****************** */
 
-article.book > img {
+article.book a > img {
   width: 130px;
   height: 200px;
+}
+article.book a {
+  text-decoration: none;
 }
 section.best-picks {
   display: flex;
@@ -148,10 +152,11 @@ article.book {
   text-align: center;
   gap: 5px;
 }
-article.book > p.name {
+article.book a > p.name {
   font-size: clamp(12px, 2vw, 16px);
+  color: black;
 }
-article.book > span.authur {
+article.book a > span.authur {
   font-size: clamp(8px, 2vw, 12px);
   color: #495057;
 }
@@ -205,6 +210,9 @@ button.explor {
   padding-block: clamp(5px, 5vw, 10px);
   padding-inline: clamp(9px, 5vw, 14vw);
   border-radius: 20px;
+}
+button.explor:hover {
+  background-color: #cc9600;
 }
 /* ***************footer******************* */
 
