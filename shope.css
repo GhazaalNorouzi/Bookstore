@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/********** navigation**********/
+nav {
+  background-image: url(./asset/nav.png);
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 100vw;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0.5% 2%;
+  position: sticky;
+}
+.logo {
+  flex-basis: 30%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* border: 1px solid red; */
+}
+.logo img {
+  width: clamp(60px, 9vw, 100px);
+  height: auto;
+}
+.nav-items {
+  flex-basis: 45%;
+  /* border: 1px solid blue; */
+}
+.nav-items ul {
+  list-style: none;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-between;
+}
+.nav-items ul li a {
+  text-decoration: none;
+  font-size: clamp(10px, 2vw, 20px);
+  padding: 2% 6%;
+  color: #ffff;
+  white-space: nowrap;
+  cursor: pointer;
+}
+.nav-items ul li a:hover {
+  text-shadow: 1px 1px 2px #cc9600;
+}
+.user-acount {
+  flex-basis: 15%;
+  /* border: 1px solid greenyellow; */
+  display: flex;
+  justify-content: flex-end;
+  padding-right: 2%;
+}
+
+i {
+  color: #ffff;
+  font-size: clamp(25px, 2vw, 32px);
+}
+/* *********************container******************* */
+.container {
+  display: flex;
+  flex-direction: column;
+  /* background-color: aqua; */
+  padding: 20px 50px;
+  align-items: center;
+}
+h2 {
+  font-size: clamp(32px, 4vw, 54px);
+}
+.filters {
+  font-size: clamp(12px, 4vw, 20px);
+  display: flex;
+  /* border: 1px solid red; */
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+}
+.book-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.book-card {
+  border: 1px solid green;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+
+  padding: 10px;
+  margin: 20px;
+  flex-basis: 20%;
+}
+img {
+  width: 130px;
+  height: 170px;
+}
+.book-title {
+  color: black;
+  font-size: clamp(10px, 5vw, 16px);
+}
+.book-author {
+  color: rgb(73, 70, 70);
+  font-size: clamp(8px, 5vw, 14px);
+}
+.book-price {
+  color: #cc9600;
+  font-size: clamp(10px, 5vw, 16px);
+}
+.add-to-cart {
+  border: 1px solid #cc9600;
+  border-radius: 5px;
+  text-decoration: none;
+  padding: 7px;
+  color: black;
+  font-size: clamp(8px, 5vw, 14px);
+}
+
+/* ***************footer********************** */
+footer {
+  background-color: black;
+}
+
+footer > div {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+}
+div.footer-wrapper > p {
+  color: #cc9600;
+  font-size: clamp(10px, 2vw, 16px);
+}
+
+span.social {
+  width: clamp(20px, 5vw, 60px);
+  height: auto;
+}
