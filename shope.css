@@ -88,7 +88,7 @@ h2 {
 }
 
 .book-card {
-  border: 1px solid green;
+  border: 1px solid #79601b;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -121,6 +121,10 @@ img {
   padding: 7px;
   color: black;
   font-size: clamp(8px, 5vw, 14px);
+}
+.add-to-cart:hover {
+  background-color: #cc9600;
+  color: #ffff;
 }
 
 /* ***************footer********************** */
