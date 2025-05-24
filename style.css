@@ -3,12 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-/* body {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-} */
 
 main {
   display: flex;
@@ -35,7 +29,6 @@ nav {
   display: flex;
   align-items: center;
   justify-content: center;
-  /* border: 1px solid red; */
 }
 .logo img {
   width: clamp(60px, 9vw, 100px);
@@ -43,7 +36,6 @@ nav {
 }
 .nav-items {
   flex-basis: 45%;
-  /* border: 1px solid blue; */
 }
 .nav-items ul {
   list-style: none;
@@ -64,7 +56,7 @@ nav {
 }
 .user-acount {
   flex-basis: 15%;
-  /* border: 1px solid greenyellow; */
+
   display: flex;
   justify-content: flex-end;
   padding-right: 2%;
@@ -74,6 +66,7 @@ i {
   color: #ffff;
   font-size: clamp(25px, 2vw, 32px);
 }
+
 /* !!!!!!!!!!!!!!!!!!!!!!!!!!! hero section !!!!!!!!!!!!!!!!!!!!!!!!!!!*/
 section.hero-section {
   position: relative;
@@ -123,7 +116,7 @@ section.best-picks {
   align-items: center;
   justify-content: center;
   margin-top: 25px;
-  /* background-color: aqua; */
+
   width: 65vw;
   margin-top: 45px;
 }
@@ -135,7 +128,7 @@ section.best-picks > .book-wrapper {
   display: flex;
   align-items: center;
   justify-content: space-between;
-  /* border: 3px solid orangered; */
+
   width: 90%;
   flex-wrap: wrap;
   margin-top: 25px;
@@ -166,8 +159,7 @@ article.book a > span.authur {
   width: 100vw;
   padding: 5%;
   display: flex;
-  /* align-items: center;
-  justify-content: center; */
+
   flex-wrap: wrap;
   gap: 10%;
 }
@@ -175,15 +167,14 @@ article.book a > span.authur {
   flex-basis: 45%;
 }
 .book-offers {
+  max-width: 50%;
   flex-basis: 45%;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  /* display: grid;
-  grid-template-rows: 4; */
-  gap: 7%;
+  justify-content: space-between;
 
-  /* border: 1px solid orangered; */
+  gap: 20px;
 }
 
 .main-text-offer {
@@ -202,13 +193,15 @@ article.book a > span.authur {
   color: #cc9600;
   display: flex;
   gap: 6%;
+  font-size: clamp(10px, 2vw, 20px);
 }
 button.explor {
   border: 1px solid #cc9600;
   background-color: black;
   color: #fff;
-  padding-block: clamp(5px, 5vw, 10px);
-  padding-inline: clamp(9px, 5vw, 14vw);
+  padding-block: clamp(3px, 2vw, 6px);
+  padding-inline: clamp(9px, 2vw, 14vw);
+  font-size: clamp(10px, 2vw, 15px);
   border-radius: 20px;
 }
 button.explor:hover {
@@ -235,3 +228,5 @@ span.social {
   width: clamp(20px, 5vw, 60px);
   height: auto;
 }
+
+/* -------------------------------------------------- */
